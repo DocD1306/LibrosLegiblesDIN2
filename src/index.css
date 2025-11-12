@@ -1,0 +1,227 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+/* 
+==========================
+Estilos personalizados para los componentes de React.
+Así evitamos sobrecargar los componentes con clases de Tailwind en el className y se hace más legible (Misión de LibrosLegibles).
+========================== 
+*/
+
+.catalogue {
+  @apply grid gap-4 justify-around mx-auto mt-8;
+
+  /* Valores que no se pueden aplicar con @apply */
+  grid-template-columns: repeat(auto-fit, 300px);
+  max-width: calc(300px * 5 + 1rem * 4);
+}
+
+
+.book_card{
+   @apply bg-white border border-gray-200 rounded-lg p-4 transition-transform hover:scale-[1.02] shadow-[0px_0px_20px_rgba(0,0,0,0.30)] w-[300px];
+}
+
+.main_content{
+  @apply min-h-screen p-4 p-10;
+}
+
+.book_image{
+  @apply h-full w-full object-cover;
+}
+
+.book_card_image_containter{
+  @apply h-[400px] w-full overflow-hidden;
+}
+
+/* 
+==========================
+Colores. Se diferencia de los colores de fondo para que también puedan ser utilizados en textos.
+========================== 
+*/
+.color_primary {
+  color: var(--color-primary);
+}
+.color_secondary {
+  color: var(--color-secondary);
+}
+.color_success {
+  color: var(--color-success);
+}
+.color_warning {
+  color: var(--color-warning);
+}
+.color_error {
+  color: var(--color-error);
+}
+.color_info {
+  color: var(--color-info);
+}
+.color_white {
+  color: var(--color-white);
+}
+.color_black_1 {
+  color: var(--color-black-1);
+}
+.color_black_2 {
+  color: var(--color-black-2);
+}
+.color_black_3 {
+  color: var(--color-black-3);
+}
+.color_grey_1 {
+  color: var(--color-grey-1);
+}
+.color_grey_2 {
+  color: var(--color-grey-2);
+}
+.color_grey_3 {
+  color: var(--color-grey-3);
+}
+.color_grey_4 {
+  color: var(--color-grey-4);
+}
+.color_grey_5 {
+  color: var(--color-grey-5);
+}
+
+/* 
+==========================
+Colores de fondo
+========================== 
+*/
+.background_color_white {
+  background-color: var(--color-white);
+}
+.background_color_grey_1 {
+  background-color: var(--color-grey-1);
+}
+.background_color_grey_2 {
+  background-color: var(--color-grey-2);
+}
+.background_color_grey_3 {
+  background-color: var(--color-grey-3);
+}
+.background_color_grey_4 {
+  background-color: var(--color-grey-4);
+}
+.background_color_grey_5 {
+  background-color: var(--color-grey-5);
+}
+.background_color_primary {
+  background-color: var(--color-primary);
+}
+.background_color_secondary {
+  background-color: var(--color-secondary);
+}
+.background_color_black_1 {
+  background-color: var(--color-black-1);
+}
+.background_color_black_2 {
+  background-color: var(--color-black-2);
+}
+.background_color_black_3 {
+  background-color: var(--color-black-3);
+}
+
+/* 
+==========================
+Configuración global para las tipografías
+Esto cambia los ajustes de todas las tipografías para que no tengamos que duplicar código
+========================== 
+*/
+
+/* Por defecto tanto los encabezados como los textos tienen el mismo espaciado, estilo y fuente */
+
+[class^="heading_"],
+[class^="text_"] {
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  letter-spacing: var(--letter-spacing);
+}
+
+/* Por defecto todos los encabezados tienen el color primario */
+
+[class^="heading_"] {
+  color: var(--color-primary);
+}
+
+/* 
+==========================
+Headings. Aquí los estilos específicos de cada heading.
+========================== */
+.heading_h1 {
+  font-size: var(--heading-h1-font-size);
+  font-weight: var(--heading-h1-font-weight);
+  line-height: var(--heading-h1-line-height);
+}
+.heading_h2 {
+  font-size: var(--heading-h2-font-size);
+  font-weight: var(--heading-h2-font-weight);
+  line-height: var(--heading-h2-line-height);
+}
+.heading_h3 {
+  font-size: var(--heading-h3-font-size);
+  font-weight: var(--heading-h3-font-weight);
+  line-height: var(--heading-h3-line-height);
+}
+.heading_h4 {
+  font-size: var(--heading-h4-font-size);
+  font-weight: var(--heading-h4-font-weight);
+  line-height: var(--heading-h4-line-height);
+}
+.heading_h5 {
+  font-size: var(--heading-h5-font-size);
+  font-weight: var(--heading-h5-font-weight);
+  line-height: var(--heading-h5-line-height);
+}
+.heading_h6 {
+  font-size: var(--heading-h6-font-size);
+  font-weight: var(--heading-h6-font-weight);
+  line-height: var(--heading-h6-line-height);
+}
+
+/*
+==========================
+Textos. Aquí los estilos específicos de cada texto.
+========================== 
+*/
+.text_large_bold {
+  font-size: var(--text-large-bold-font-size);
+  font-weight: var(--text-large-bold-font-weight);
+  line-height: var(--text-large-bold-line-height);
+}
+.text_large {
+  font-size: var(--text-large-font-size);
+  font-weight: var(--text-large-font-weight);
+  line-height: var(--text-large-line-height);
+}
+.text_medium_bold {
+  font-size: var(--text-medium-bold-font-size);
+  font-weight: var(--text-medium-bold-font-weight);
+  line-height: var(--text-medium-bold-line-height);
+}
+.text_medium {
+  font-size: var(--text-medium-font-size);
+  font-weight: var(--text-medium-font-weight);
+  line-height: var(--text-medium-line-height);
+}
+.text_normal_bold {
+  font-size: var(--text-normal-bold-font-size);
+  font-weight: var(--text-normal-bold-font-weight);
+  line-height: var(--text-normal-bold-line-height);
+}
+.text_normal {
+  font-size: var(--text-normal-font-size);
+  font-weight: var(--text-normal-font-weight);
+  line-height: var(--text-normal-line-height);
+}
+.text_small_bold {
+  font-size: var(--text-small-bold-font-size);
+  font-weight: var(--text-small-bold-font-weight);
+  line-height: var(--text-small-bold-line-height);
+}
+.text_small {
+  font-size: var(--text-small-font-size);
+  font-weight: var(--text-small-font-weight);
+  line-height: var(--text-small-line-height);
+}

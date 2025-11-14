@@ -25,3 +25,7 @@ También podemos ver elementos de accesiblidad como un link para saltar al conte
 Además, se se puede navegar por el catálogo utilizando solo el teclado mediante la tecla "Tab":
 
 <img src="./imagenes_readme/navegar_tab.png" alt="Navegación con teclado" width="800"/>
+
+Por último, se ha comprobado que el lector de pantalla funciona correctamente:
+
+<img src="./imagenes_readme/lector-pantalla.png" alt="Lector de pantalla" width="600"/>

@@ -52,7 +52,7 @@ Por otra parte también hay un link que nos permite saltar al contenido principa
 
 <br>
 
-También existe una página de detalle para los libros. Esta contiene un botón para volver al elemento anterior. Y libros recomendados en la parte inferior.
+También existe una página de detalle para los libros. Esta contiene un botón para volver al elemento anterior. Además hay libros recomendados en la parte inferior.
 
 <img src="./imagenes_readme/detalle.png" alt="detalle libro" width="600"/>
 

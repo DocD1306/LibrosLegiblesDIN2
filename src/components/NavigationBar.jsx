@@ -40,9 +40,6 @@ function NavigationBar() {
                         2. aria-label: Describe la acción para usuarios que no ven el icono "☰".
                         3. aria-expanded: Informa al lector de pantalla si el menú está abierto (true) o cerrado (false).
                         4. aria-controls: Vincula este botón con el menú que controla mediante su ID.
-                        
-                        Cambios visuales:
-                        - lg:hidden: Se oculta automáticamente en pantallas de escritorio.
                     */}
                     <button 
                         type="button"

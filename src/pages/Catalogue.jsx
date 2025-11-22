@@ -19,6 +19,7 @@ function Catalogue(){
                     
                     books.map( book =>
                         <Link 
+                            key={book.id}
                             to={`/detail/${book.id}`} 
                             aria-label={`Ver detalles del libro ${book.title}`}
                         >

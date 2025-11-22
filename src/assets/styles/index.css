@@ -25,17 +25,13 @@ Así evitamos sobrecargar los componentes con clases de Tailwind en el className
 
 /* Estilos para el catálogo de libros */
 .catalogue {
-  @apply grid gap-7 justify-around mx-auto mt-8;
+  @apply grid gap-7 justify-around mx-auto mt-8 pt-3;
 
   /* Valores que no se pueden aplicar con @apply */
   grid-template-columns: repeat(auto-fit, 300px);
   max-width: calc(300px * 5 + 1rem * 12);
 }
 
-/* Estilos para la sección del título de la página */
-.page_title_section{
-  @apply pb-3 pl-5;
-}
 
 /* Estilos para las tarjetas de los libros */
 .book_card{
@@ -45,6 +41,20 @@ Así evitamos sobrecargar los componentes con clases de Tailwind en el className
 /* Estilos para el contenedor principal */
 .main_content{
   @apply min-h-screen py-10 px-10;
+}
+
+/* Tablet: reducimos padding */
+@media (max-width: 1024px) {
+  .main_content {
+    @apply py-8 px-6;
+  }
+}
+
+/* Móvil: reducimos aún más padding */
+@media (max-width: 640px) {
+  .main_content {
+    @apply py-6 px-4;
+  }
 }
 
 /* Estilos para las imágenes de los libros */
@@ -198,6 +208,66 @@ Headings. Aquí los estilos específicos de cada heading.
   line-height: var(--heading-h6-line-height);
 }
 
+/* Esto hace que los valores de los heading cambien automáticamente en pantallas más pequeñas */
+/* Tablet (max-width 1024px) */
+@media (max-width: 1024px) {
+  .heading_h1 {
+    font-size: var(--heading-h2-font-size);
+    font-weight: var(--heading-h2-font-weight);
+    line-height: var(--heading-h2-line-height);
+  }
+  .heading_h2 {
+    font-size: var(--heading-h3-font-size);
+    font-weight: var(--heading-h3-font-weight);
+    line-height: var(--heading-h3-line-height);
+  }
+  .heading_h3 {
+    font-size: var(--heading-h4-font-size);
+    font-weight: var(--heading-h4-font-weight);
+    line-height: var(--heading-h4-line-height);
+  }
+  .heading_h4 {
+    font-size: var(--heading-h5-font-size);
+    font-weight: var(--heading-h5-font-weight);
+    line-height: var(--heading-h5-line-height);
+  }
+  .heading_h5 {
+    font-size: var(--heading-h6-font-size);
+    font-weight: var(--heading-h6-font-weight);
+    line-height: var(--heading-h6-line-height);
+  }
+}
+
+/* Móvil: reducción más drástica (3 niveles respecto a escritorio) */
+@media (max-width: 640px) {
+  .heading_h1 {
+    font-size: var(--heading-h3-font-size);
+    font-weight: var(--heading-h3-font-weight);
+    line-height: var(--heading-h3-line-height);
+  }
+  .heading_h2 {
+    font-size: var(--heading-h4-font-size);
+    font-weight: var(--heading-h4-font-weight);
+    line-height: var(--heading-h4-line-height);
+  }
+  .heading_h3 {
+    font-size: var(--heading-h5-font-size);
+    font-weight: var(--heading-h5-font-weight);
+    line-height: var(--heading-h5-line-height);
+  }
+  .heading_h4 {
+    font-size: var(--heading-h6-font-size);
+    font-weight: var(--heading-h6-font-weight);
+    line-height: var(--heading-h6-line-height);
+  }
+  .heading_h5 {
+    font-size: var(--heading-h6-font-size);
+    font-weight: var(--heading-h6-font-weight);
+    line-height: var(--heading-h6-line-height);
+  }
+}
+
+
 /*
 ==========================
 Textos. Aquí los estilos específicos de cada texto.
@@ -242,4 +312,53 @@ Textos. Aquí los estilos específicos de cada texto.
   font-size: var(--text-small-font-size);
   font-weight: var(--text-small-font-weight);
   line-height: var(--text-small-line-height);
+}
+
+/* Esto hace que los valores de los textos cambien automáticamente en pantallas más pequeñas */
+/* Textos Responsive: Tablet */
+@media (max-width: 1024px) {
+  .text_large_bold {
+    font-size: var(--text-medium-bold-font-size);
+    font-weight: var(--text-medium-bold-font-weight);
+    line-height: var(--text-medium-bold-line-height);
+  }
+  .text_large {
+    font-size: var(--text-medium-font-size);
+    font-weight: var(--text-medium-font-weight);
+    line-height: var(--text-medium-line-height);
+  }
+}
+
+/* Textos Responsive: Móvil */
+@media (max-width: 640px) {
+  .text_large_bold {
+    font-size: var(--text-medium-bold-font-size);
+    font-weight: var(--text-medium-bold-font-weight);
+    line-height: var(--text-medium-bold-line-height);
+  }
+  .text_large {
+    font-size: var(--text-medium-font-size);
+    font-weight: var(--text-medium-font-weight);
+    line-height: var(--text-medium-line-height);
+  }
+  .text_medium_bold {
+    font-size: var(--text-normal-bold-font-size);
+    font-weight: var(--text-normal-bold-font-weight);
+    line-height: var(--text-normal-bold-line-height);
+  }
+  .text_medium {
+    font-size: var(--text-normal-font-size);
+    font-weight: var(--text-normal-font-weight);
+    line-height: var(--text-normal-line-height);
+  }
+  .text_normal_bold {
+    font-size: var(--text-small-font-size);
+    font-weight: var(--text-small-font-weight);
+    line-height: var(--text-small-line-height);
+  }
+  .text_normal {
+    font-size: var(--text-small-font-size);
+    font-weight: var(--text-small-font-weight);
+    line-height: var(--text-small-line-height);
+  }
 }

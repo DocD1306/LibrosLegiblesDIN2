@@ -1,5 +1,7 @@
-import books from "../data/books.js"
-import Book from "../components/Book.jsx"
+import books from "../data/books.js";
+import Book from "../components/Book.jsx";
+import { Link } from "react-router-dom";
+
 
 function Catalogue(){
 
@@ -9,14 +11,19 @@ function Catalogue(){
     */
     return (
         <> 
-            <section className="page_title_section">
-                <h1 className="heading_h1 color_primary">Catálogo de libros</h1>
-                <p className="text_normal color_grey_2 pt-2 pl-1">Disfruta de una infinidad de historias</p>
-            </section>
+            <h1 className="heading_h1 color_primary">Catálogo de libros</h1>
+            <p className="text_normal color_grey_2 pt-2 pl-1">Disfruta de una infinidad de historias</p>
+            
             <section className="catalogue w-full">
                 {
+                    
                     books.map( book =>
-                        <Book title={book.title} image={book.image} synopsis={book.synopsis}/>
+                        <Link 
+                            to={`/detail/${book.id}`} 
+                            aria-label={`Ver detalles del libro ${book.title}`}
+                        >
+                            <Book title={book.title} image={book.image} synopsis={book.synopsis}/>
+                        </Link>   
                     )
                 }
             </section>

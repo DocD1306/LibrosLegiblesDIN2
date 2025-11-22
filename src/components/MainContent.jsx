@@ -10,7 +10,6 @@ function MainContent({ children }){
     tabIndex="-1" hace que el elemento no se pueda enfocar mediante tabulación, pero permite que los scripts lo enfoquen si es necesario (como al usar 
     el enlace de "Saltar al contenido principal")
 
-    Con el className se le aplican los estilos, en este caso se hace para que todas las secciones principales tengan el mismo padding.
     */
     return (
         <main id="main-content" role="main" tabIndex="-1" className="main_content">

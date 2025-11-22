@@ -1,6 +1,6 @@
 const booksData = [
-
   {
+    id: 1,
     title: "1984",
     image: "public/images/1984.jpg",
     genre: "Ciencia ficción / Distopía",
@@ -8,6 +8,7 @@ const booksData = [
     synopsis: "Una novela distópica sobre un régimen totalitario que controla cada aspecto de la vida humana y reescribe la historia."
   },
   {
+    id: 2,
     title: "Antología poética",
     image: "public/images/antologia-poetica.jpg",
     genre: "Poesía",
@@ -15,6 +16,7 @@ const booksData = [
     synopsis: "Selección de poemas que exploran el amor, la muerte, la esperanza y la belleza del lenguaje."
   },
   {
+    id: 3,
     title: "Así habló Zaratustra",
     image: "public/images/asi-hablo-zaratustra.jpg",
     genre: "Filosofía",
@@ -22,6 +24,7 @@ const booksData = [
     synopsis: "La obra filosófica más influyente de Nietzsche, donde presenta al superhombre y critica la moral tradicional."
   },
   {
+    id: 4,
     title: "Atrapado en la oscuridad",
     image: "public/images/atrapado-en-la-oscuridad.jpg",
     genre: "Suspenso / Terror psicológico",
@@ -29,6 +32,7 @@ const booksData = [
     synopsis: "Una historia de misterio y horror en la que nada es lo que parece."
   },
   {
+    id: 5,
     title: "Berserk",
     image: "public/images/berserk.jpg",
     genre: "Manga / Fantasía oscura",
@@ -36,6 +40,7 @@ const booksData = [
     synopsis: "La historia épica de Guts, un guerrero marcado por la tragedia en un mundo dominado por demonios y oscuridad."
   },
   {
+    id: 6,
     title: "Chainsaw Man",
     image: "public/images/chainsaw-man.jpg",
     genre: "Manga / Acción / Terror",
@@ -43,6 +48,7 @@ const booksData = [
     synopsis: "Denji, un joven cazador de demonios, obtiene el poder de convertirse en Chainsaw Man para luchar contra seres infernales."
   },
   {
+    id: 7,
     title: "Cien años de soledad",
     image: "public/images/cien-años-de-soledad.jpg",
     genre: "Realismo mágico",
@@ -50,6 +56,7 @@ const booksData = [
     synopsis: "La saga de la familia Buendía en el pueblo de Macondo, una obra maestra de Gabriel García Márquez."
   },
   {
+    id: 8,
     title: "Crimen y castigo",
     image: "public/images/crimen-y-castigo.jpg",
     genre: "Drama psicológico",
@@ -57,6 +64,7 @@ const booksData = [
     synopsis: "Raskólnikov, un estudiante ruso, comete un crimen y se enfrenta al tormento de su conciencia."
   },
   {
+    id: 9,
     title: "El coronel no tiene quien le escriba",
     image: "public/images/el-coronel-no-tiene-quien-le-escriba.jpg",
     genre: "Ficción literaria",
@@ -64,6 +72,7 @@ const booksData = [
     synopsis: "Un coronel jubilado espera con dignidad una pensión que nunca llega, símbolo de la esperanza y la desilusión."
   },
   {
+    id: 10,
     title: "El diario de Anne Frank",
     image: "public/images/el-diario-de-anne-frank.jpg",
     genre: "Memorias / Historia",
@@ -71,6 +80,7 @@ const booksData = [
     synopsis: "El testimonio de una joven judía que narra su vida oculta durante la ocupación nazi."
   },
   {
+    id: 11,
     title: "El principito",
     image: "public/images/el-principito.jpg",
     genre: "Fábula / Filosofía",
@@ -78,6 +88,7 @@ const booksData = [
     synopsis: "Un cuento filosófico sobre la inocencia, la amistad y la búsqueda del sentido de la vida."
   },
   {
+    id: 12,
     title: "El Quijote",
     image: "public/images/el-quijote.jpg",
     genre: "Clásico / Aventura",
@@ -85,6 +96,7 @@ const booksData = [
     synopsis: "Las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza en su lucha contra la realidad."
   },
   {
+    id: 13,
     title: "Ensayos",
     image: "public/images/ensayos.jpg",
     genre: "Filosofía / Ensayo",
@@ -92,6 +104,7 @@ const booksData = [
     synopsis: "Una colección de reflexiones filosóficas y morales sobre la condición humana."
   },
   {
+    id: 14,
     title: "Flores para Algernon",
     image: "public/images/flores-para-algernon.jpg",
     genre: "Ciencia ficción / Drama",
@@ -99,6 +112,7 @@ const booksData = [
     synopsis: "Charlie Gordon se somete a un experimento para aumentar su inteligencia, con resultados devastadores."
   },
   {
+    id: 15,
     title: "Hunter x Hunter",
     image: "public/images/hunter-x-hunter.jpg",
     genre: "Manga / Aventura / Acción",
@@ -106,6 +120,7 @@ const booksData = [
     synopsis: "Gon Freecss se embarca en una aventura para convertirse en cazador y encontrar a su padre desaparecido."
   },
   {
+    id: 16,
     title: "Indigno de ser humano",
     image: "public/images/indigno-de-ser-humano.jpg",
     genre: "Drama psicológico / Existencialismo",
@@ -113,6 +128,7 @@ const booksData = [
     synopsis: "Un retrato crudo y doloroso de un hombre que se siente incapaz de encajar en la sociedad."
   },
   {
+    id: 17,
     title: "La catedral",
     image: "public/images/la-catedral.jpg",
     genre: "Ficción contemporánea",
@@ -120,6 +136,7 @@ const booksData = [
     synopsis: "Un retrato de la corrupción política y moral en el Perú a través de la voz de varios personajes."
   },
   {
+    id: 18,
     title: "La leyenda del rey errante",
     image: "public/images/la-leyenda-del-rey-errante.jpg",
     genre: "Aventura / Fantasía",
@@ -127,6 +144,7 @@ const booksData = [
     synopsis: "Un relato poético sobre la búsqueda de la sabiduría y el valor de la palabra."
   },
   {
+    id: 19,
     title: "La metamorfosis",
     image: "public/images/la-metamorfosis.jpg",
     genre: "Ficción absurda",
@@ -134,6 +152,7 @@ const booksData = [
     synopsis: "Gregor Samsa despierta convertido en insecto, enfrentándose a la incomprensión de su familia."
   },
   {
+    id: 20,
     title: "Los hermanos Karamazov",
     image: "public/images/los-hermanos-karamazov.jpg",
     genre: "Filosofía / Drama psicológico",
@@ -141,6 +160,7 @@ const booksData = [
     synopsis: "Una profunda exploración de la fe, la duda y la moral en una familia rusa atormentada."
   },
   {
+    id: 21,
     title: "Metro 2033",
     image: "public/images/metro-2033.jpg",
     genre: "Ciencia ficción / Postapocalíptica",
@@ -148,6 +168,7 @@ const booksData = [
     synopsis: "En un Moscú devastado, los sobrevivientes viven en el metro mientras enfrentan mutantes y su propia desesperanza."
   },
   {
+    id: 22,
     title: "Oyasumi Punpun",
     image: "public/images/oyasumi-punpun.jpg",
     genre: "Manga / Drama / Coming-of-age",
@@ -155,6 +176,7 @@ const booksData = [
     synopsis: "La historia de Punpun, un niño que atraviesa la complejidad de crecer en un mundo cruel e incomprensible."
   },
   {
+    id: 23,
     title: "Pasos de marioneta",
     image: "public/images/pasos-de-marioneta.jpg",
     genre: "Thriller psicológico",
@@ -162,6 +184,7 @@ const booksData = [
     synopsis: "Una historia de manipulación, secretos y control que mantiene la tensión hasta el final."
   },
   {
+    id: 24,
     title: "Rebelión en la granja",
     image: "public/images/rebelion-en-la-granja.jpg",
     genre: "Sátira política",
@@ -169,6 +192,7 @@ const booksData = [
     synopsis: "Los animales de una granja se rebelan contra los humanos, solo para crear su propia tiranía."
   },
   {
+    id: 25,
     title: "Sol y acero",
     image: "public/images/sol-y-acero.jpg",
     genre: "Ensayo / Filosofía",
@@ -176,6 +200,7 @@ const booksData = [
     synopsis: "Mishima reflexiona sobre la dualidad entre el cuerpo y el espíritu, la disciplina y la estética."
   },
   {
+    id: 26,
     title: "Vagabond",
     image: "public/images/vagabond.jpg",
     genre: "Manga / Histórico / Acción",

@@ -4,7 +4,7 @@ import MainContent from "./MainContent.jsx";
 import logo from '../assets/images/LibrosLegiblesLogo.png'
 
 
-function NavigationBar() {
+function AdminNavigationBar() {
     /* Estado para controlar la apertura/cierre del menú móvil */
     const [open, setOpen] = useState(false);
 
@@ -29,6 +29,7 @@ function NavigationBar() {
                             alt="Libros Legibles Logo" 
                             className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px] transition-all duration-300 rounded-full" 
                         />
+                        {/* Texto responsive mediante media queries en CSS */}
                         <h1 className="heading_h3 color_white transition-all duration-300">
                             LibrosLegibles
                         </h1>
@@ -89,7 +90,7 @@ function NavigationBar() {
                                 to="/" 
                                 end
                                 onClick={() => setOpen(false)} 
-                                className="text_medium_bold color_white hover:opacity-80 transition-opacity"
+                                className="text_normal_bold color_white hover:opacity-80 transition-opacity"
                                 aria-current={({ isActive }) => isActive ? "page" : undefined}
                             >
                                 Inicio
@@ -99,10 +100,20 @@ function NavigationBar() {
                             <NavLink 
                                 to="/catalogue" 
                                 onClick={() => setOpen(false)} 
-                                className="text_medium_bold color_white hover:opacity-80 transition-opacity"
+                                className="text_normal_bold color_white hover:opacity-80 transition-opacity"
                                 aria-current={({ isActive }) => isActive ? "page" : undefined}
                             >
                                 Catálogo de Libros
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink 
+                                to="/admin" 
+                                onClick={() => setOpen(false)} 
+                                className="text_normal_bold color_white hover:opacity-80 transition-opacity"
+                                aria-current={({ isActive }) => isActive ? "page" : undefined}
+                            >
+                                Administración
                             </NavLink>
                         </li>
                     </ul>
@@ -118,4 +129,4 @@ function NavigationBar() {
     );
 }
 
-export default NavigationBar;
+export default AdminNavigationBar;
